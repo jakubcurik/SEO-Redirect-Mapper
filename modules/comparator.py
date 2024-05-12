@@ -24,8 +24,8 @@ def compare_urls(df_old, df_new):
     matches = model.get_matches()
 
     # Přidání URL k výsledkům na základě odpovídajícího textu
-    matches['old_url'] = matches['From'].apply(lambda x: df_old[df_old['comparison_string'] == x]['url'].values[0] if x in df_old['comparison_string'].values else None)
-    matches['new_url'] = matches['To'].apply(lambda x: df_new[df_new['comparison_string'] == x]['url'].values[0] if x in df_new['comparison_string'].values else None)
+    matches['stara_url'] = matches['From'].apply(lambda x: df_old[df_old['comparison_string'] == x]['url'].values[0] if x in df_old['comparison_string'].values else None)
+    matches['nova_url'] = matches['To'].apply(lambda x: df_new[df_new['comparison_string'] == x]['url'].values[0] if x in df_new['comparison_string'].values else None)
 
     return matches[['stara_url', 'nova_url', 'podobnost']]
 
