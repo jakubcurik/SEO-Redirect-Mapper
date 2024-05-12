@@ -23,7 +23,16 @@ Nástroj funguje na principu scrapingu dat ze strých i nových URL adres a poro
 - Requests a BeautifulSoup pro scraping
 - PolyFuzz pro porovnávání textů
 
-## Instalace
+## Možnosti spuštění nástroje
+- Spuštění webové aplikace
+- Instalace ve vlastním vývovjovém prostředí na localhostu
+
+## Spuštění webové aplikace
+Spuštění hostované aplikace je ta nejrychlejší a nejjednoduší možnost, jak nsátroj spustit a začít používat.
+
+Stačí přejít na tuto adresu: https://seo-redirect-mapper.streamlit.app/
+
+## Instalace ve vlastním prostředí
 Projekt vyžaduje Python 3.11 nebo novější. Doporučuju použít virtuální prostředí.
 
 1. Naklonuj si repozitář:
